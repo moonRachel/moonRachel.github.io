@@ -1,0 +1,72 @@
+body{
+	background-color:#DCDCDC;
+}
+#scr1{
+	width:180px;
+	height:52px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-90px,-26px);
+	font-size:16px;
+	font-weight: bold;
+	background-color:#CD5C5C;
+	border:none;
+	border-radius:10px;
+	box-shadow:-5px 5px 5px rgba(0,0,0,.5);
+	outline:none;
+
+}
+#scr1:hover{
+	background-color:#B22222;
+	box-shadow:-2px 2px 2px rgba(0,0,0,.5);
+}
+#scr2{
+	display:none;
+	width:100%;
+	height:100%;
+	position: absolute;
+	background-color:#D8BFD8;
+}
+ul{
+	width:200px;
+	height:100px;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform: translate(-100px,-50px);
+	list-style: none;
+}
+#scr2 a{
+	font-size:20px;
+	line-height: 40px;
+	text-decoration: none;
+}
+#scr3{
+	display:none;
+}
+/*index2.html*/
+.jumbotron h1{
+	color:#CD5C5C;
+}
+.jumbotron .glyphicon-fire{
+	color:#CD5C5C;
+	font-size:50px;
+
+
+}
+
+ul.nav-pills{
+	width:140px;
+	border-radius:5px;
+	border:1px solid purple;
+	box-shadow:0 1px 6px rgba(0,0,0,.8);
+}
+ul.nav-pills li{
+	margin:0;
+	font-size:20px;
+	border-top:1px solid purple;
+}
+ul.nav-pills .affix{
+	top:120px;
+}

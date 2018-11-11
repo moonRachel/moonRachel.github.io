@@ -1,0 +1,53 @@
+body{
+	background-color: #D8BFD8;
+}
+.jumbotron h1{
+	color:#CD5C5C;
+}
+.jumbotron .glyphicon-fire{
+	color:#CD5C5C;
+	font-size:50px;
+}
+
+ul.nav-pills{
+	width:140px;
+	border-radius:5px;
+	border:1px solid #CD5C5C;
+	box-shadow:0 1px 6px rgba(0,0,0,.8);
+}
+ul.nav-pills li{
+	margin:0;
+	font-size:20px;
+	border-top:1px solid #CD5C5C;
+}
+ul.nav-pills.affix{
+	top:300px;
+}
+.item{
+	background-color:#D8BFD8;
+}
+.left,.right{
+	color:blue;
+}
+.left:hover{
+	color:blue;
+}
+.right:hover{
+	color:blue;
+}
+span.logo{
+	color:#CD5C5C;
+}
+.bg-grey{
+	background-color:#DCDCDC;
+}
+
+#camera{
+	margin-top:300px;
+}
+#contact{
+	margin-top:1100px;
+}
+footer span{
+	font-size:50px;
+}

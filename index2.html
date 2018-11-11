@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>个人网站页</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="zhan2.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myNav">
+	<header>
+		<a class="btn btn-danger" title="Go Poems & Music" href="index3.html">
+			<span class="glyphicon glyphicon-arrow-left">
+		</a>
+		<a class="btn btn-danger pull-right" title="Go Project pages" href="https://github.com/moonRachel">
+			<span class="glyphicon glyphicon-arrow-right">
+		</a>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron text-center" id="head">
+				<h1>欢迎你 <span class="glyphicon glyphicon-fire"></span></h1>
+			</div>
+			<br><br><br>
+			<!--附件导航部分-->
+			<div class="col-sm-3" id="myNav">
+				<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
+					<li><a href="#resume">精简版简历</a></li>
+					<li><a href="#camera">摄影集</a></li>
+					<li><a href="#contact">联系我</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-sm-9">
+				<!--简历-->
+				<div id="resume" class="text-center text-danger">
+					<!--简历第一部分-->
+					<div class="col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								教育经历
+							</div>
+							<div class="panel-body">
+								2015 年 9 月—至今 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								河北工业大学 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								 通信工程<br><br>
+								<span class="glyphicon glyphicon-ok" title="year">
+								</span> 相关课程 ：C 语言程序设计 , 计算机网络
+							</div>
+						</div>
+					</div>
+					<!--简历第二部分-->
+					<div class="col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								个人技能
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-3">
+										<span>HTML</span>
+									</div>
+									<div class="col-sm-9">
+										<div class="progress progress-striped">
+											<div class="progress-bar progress-bar-danger active" style="width:80%">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3">
+										<span>CSS</span>
+									</div>
+									<div class="col-sm-9">
+										<div class="progress progress-striped">
+											<div class="progress-bar progress-bar-danger active" style="width:75%">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3">
+										<span>Bootstrap</span>
+									</div>
+									<div class="col-sm-9">
+										<div class="progress progress-striped">
+											<div class="progress-bar progress-bar-danger active" style="width:70%">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--简历第三部分-->
+					<div class="col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								荣誉技能
+							</div>
+							<div class="panel-body">
+								<table class="table">
+									<tr>
+										<th><span class="glyphicon glyphicon-ok" title="year"></span> 2018</th>
+										<th>上学期</th>
+										<th>获XXX奖学金</th>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-ok" title="year"></span> 2017</th>
+										<th>上学期</th>
+										<th>获XXX奖学金</th>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-ok" title="year"></span> 2016</th>
+										<th>上学期</th>
+										<th>获XXX奖学金</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--图片-->
+				<div id="camera">
+					<div class="row">
+						<!--模态框-->
+						<div class="col-sm-4 text-center">
+							<a data-toggle="modal" data-target="#modalOne"title="点击查看详情" class="thumbnail">
+								<img src="image/a.jpg">
+							</a>
+							<div class="modal fade" id="modalOne">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											刘同新作
+											《别做那只迷途的候鸟》
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 text-center">
+							<a data-toggle="modal" data-target="#modaltwo"title="点击查看详情" class="thumbnail">
+								<img src="image/b.jpg">
+							</a>
+							<div class="modal fade" id="modaltwo">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											高山流水
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 text-center">
+							<a data-toggle="modal" data-target="#modalthree"title="点击查看详情" class="thumbnail">
+								<img src="image/c.jpg" class="img-rounded">
+							</a>
+							<div class="modal fade" id="modalthree">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											青青草原
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br><br>
+					<!--轮播图-->
+					<div class="col-sm-12">
+						<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active thumbnail">
+									<img src="image/flower.jpg" alt="">
+								</div>
+								<div class="item thumbnail">
+									<img src="image/leaf.jpg" alt="">
+								</div>
+								<div class="item thumbnail">
+									<img src="image/mountain.jpg" alt="">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--联系-->
+				<div id="contact" class="container-fluid bg-grey text-danger">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1><span class="glyphicon glyphicon-cloud logo"></span> 联系我</h1><hr/>
+						</div>
+					</div>
+					
+					<div class="col-sm-5">
+						<p><span class="glyphicon glyphicon-map-marker"></span> 河北省廊坊市</p>
+						<p><span class="glyphicon glyphicon-phone"></span> +86 1888888888</p>
+						<p><span class="glyphicon glyphicon-envelope"></span> 1555555@163.com</p>
+					</div>
+					<!--表单组-->
+					<div class="col-sm-7">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<input type="text" id="name" class="form-control" placeholder="Name">
+							</div>
+							<div class="col-sm-6 form-group">
+								<input type="text" id="e-mail" class="form-control" placeholder="E-mail">
+							</div>
+						</div>
+						<textarea class="form-control" placeholder="Comments" row="5"></textarea><br>
+						<div class="row">
+							<div class="col-sm-12 form-group">
+								<button class="btn btn-default pull-right" type="submit">发送</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+			-->
+		</div>
+	</div>
+	<footer class="text-center">
+		<a class="up-arrow" href="#head" data-toggle="tooltips" title="回到顶部">
+			<span class="glyphicon glyphicon-chevron-up logo"></span>
+		</a>
+	</footer>
+	
+</body>
+</html>
