@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="zhan.css">
 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
 		body{
@@ -121,68 +120,7 @@
 		<b>试听</b>
 		<audio src="枉凝眉.mp3" controls>试听</a>
 	</pre>
-	<div id="app">
-    	<div id="poem-post">
-    		<div v-for="item in poem" class="jumbotron">
-    			<h2 class="display-3 text-primary">{{item.title}}</h2>    		
-    			<p>{{item.content}}</p>
-    		</div>
-    	</div>
-		<button class="btn btn-primary" v-on:click="showInput">我来加一首</button>
-		<div v-bind:class="inputClass" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="form-group row" v-for="(value,key) in item">
-						<label class="col-sm-2 col-form-label">{{key}}</label>
-						<div class="col-sm-10">
-							<textarea type="text" class="form-control is-valid" v-model:value="item[key]"></textarea>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-primary" v-on:click="submit('poem')">提交</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script>
-		var app = new Vue({
-			el:"#app",
-			methods:{
-				showInput:function (event) {
-					if(this.inputClass==="fade modal-dialog"){
-						this.inputClass="fade modal-dialog active show"
-					}
-					else{
-						this.inputClass="fade modal-dialog"
-					}
-				},
-				submit:function (message){
-					if(message==="poem"){
-						this.poem.push(Object.assign({},this.item))
-					}
-					this.item.title="诗名"
-					this.item.content="诗体"
-					this.inputClass="fade modal-dialog"
-
-				}
-			},
-			data:{
-				inputClass:"fade modal-dialog",
-				item:{
-					title:"诗名",
-					content:"诗体内容"
-				},
-				poem:[
-					{
-						title:"陌上桑",
-						content:"日出东南隅，照我秦氏楼，秦氏有好女，自名为罗敷"						"	
-					},
-					
-				],
-			}
-			　
-		})
+	
 
 </body>
 </html>
